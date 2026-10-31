@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CommentsSrvice/CommentsSrvice.csproj" Id="c2179aac-92fd-4fdc-b2a4-cbf94d101a4d" />
+  <Project Path="MyDbWebService/MyDbWebService.csproj" Id="4dffb31a-f043-4280-84fd-d3f76a5566c6" />
+  <Project Path="WebDbSupportChecker/WebDbSupportChecker.csproj" Id="a9f2ca7c-a4d0-41b3-b829-0b63f8cb50f2" />
+  <Project Path="WebUsingOnLineSevices/WebUsingOnLineSevices.csproj" Id="fdabd9eb-c0cd-474e-a3c1-c98dd82e9970" />
+</Solution>

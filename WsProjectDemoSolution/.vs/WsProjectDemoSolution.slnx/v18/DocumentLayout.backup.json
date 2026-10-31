@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\models\\myuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\models\\myuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\dbhelper\\dbhelper_mysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\dbhelper\\dbhelper_mysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\dbhelper\\dbhelper_mssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\dbhelper\\dbhelper_mssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\dbhelper\\dbhelper_access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\dbhelper\\dbhelper_access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\dal\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\dal\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\dal\\myuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\dal\\myuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\dal\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\dal\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\app_code\\dal\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\app_code\\dal\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|e:\\wsdemoforstudents\\wsprojectdemosolution\\mydbwebservice\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFFB31A-F043-4280-84FD-D3F76A5566C6}|MyDbWebService\\MyDbWebService.csproj|solutionrelative:mydbwebservice\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\Models\\Role.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\Models\\Role.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T19:02:21.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbHelper_MySql.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DbHelper\\DbHelper_MySql.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\DbHelper\\DbHelper_MySql.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DbHelper\\DbHelper_MySql.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\DbHelper\\DbHelper_MySql.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T19:01:52.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbHelper_MsSql.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DbHelper\\DbHelper_MsSql.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\DbHelper\\DbHelper_MsSql.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DbHelper\\DbHelper_MsSql.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\DbHelper\\DbHelper_MsSql.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T19:01:49.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Article.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\Models\\Article.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\Models\\Article.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\Models\\Article.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\Models\\Article.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:58:35.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyUser.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\Models\\MyUser.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\Models\\MyUser.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\Models\\MyUser.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\Models\\MyUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:58:58.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DbHelper_Access.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DbHelper\\DbHelper_Access.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\DbHelper\\DbHelper_Access.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DbHelper\\DbHelper_Access.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\DbHelper\\DbHelper_Access.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T19:01:44.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DAL\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\DAL\\RoleRepository.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DAL\\RoleRepository.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\DAL\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:59:55.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyUserRepository.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DAL\\MyUserRepository.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\DAL\\MyUserRepository.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DAL\\MyUserRepository.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\DAL\\MyUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:59:49.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DAL\\IRepository.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\DAL\\IRepository.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DAL\\IRepository.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\DAL\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:59:45.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ArticleRepository.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DAL\\ArticleRepository.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\App_Code\\DAL\\ArticleRepository.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\App_Code\\DAL\\ArticleRepository.cs",
+              "RelativeToolTip": "MyDbWebService\\App_Code\\DAL\\ArticleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:58:18.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WebService1.asmx.cs",
+              "DocumentMoniker": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\WebService1.asmx.cs",
+              "RelativeDocumentMoniker": "MyDbWebService\\WebService1.asmx.cs",
+              "ToolTip": "E:\\wsDemoForStudents\\WsProjectDemoSolution\\MyDbWebService\\WebService1.asmx.cs",
+              "RelativeToolTip": "MyDbWebService\\WebService1.asmx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:50:55.153Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
