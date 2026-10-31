@@ -12,15 +12,16 @@ namespace MyDbWebService.App_Code {
         {
             string sql = @"
             INSERT INTO tblUser 
-            (firstName, lastName, userEmail, dob, roleId, isActive)
+            (firstName, lastName, userEmail, userPass, dob, roleId, isActive)
             VALUES
-            (@firstName, @lastName, @email, @dob, @roleId, @isActive)";
+            (@firstName, @lastName, @email, @pass, @dob, @roleId, @isActive)";
 
             var parameters = new Dictionary<string, object>
         {
             {"@firstName", user.FirstName},
             {"@lastName", user.LastName},
             {"@email", user.UserEmail},
+            {"@pass", user.UserPass},
             {"@dob", user.DOB},
             {"@roleId", user.UserRole.RoleId},
             {"@isActive", user.IsActive}
@@ -31,6 +32,9 @@ namespace MyDbWebService.App_Code {
 
         public int Update(MyUser user)
         {
+            // הסיסמה מתעדכנת רק אם נשלחה סיסמה חדשה
+            bool updatePass = !string.IsNullOrEmpty(user.UserPass);
+
             string sql = @"
             UPDATE tblUser SET
                 firstName = @firstName,
@@ -38,9 +42,11 @@ namespace MyDbWebService.App_Code {
                 userEmail = @email,
                 dob = @dob,
                 roleId = @roleId,
-                isActive = @isActive
+                isActive = @isActive"
+                + (updatePass ? ", userPass = @pass" : "") + @"
             WHERE userId = @id";
 
+            // ב-Access הפרמטרים לפי סדר - חייב להתאים לסדר ב-SQL
             var parameters = new Dictionary<string, object>
         {
             {"@firstName", user.FirstName},
@@ -48,9 +54,11 @@ namespace MyDbWebService.App_Code {
             {"@email", user.UserEmail},
             {"@dob", user.DOB},
             {"@roleId", user.UserRole.RoleId},
-            {"@isActive", user.IsActive},
-            {"@id", user.UserID}
+            {"@isActive", user.IsActive}
         };
+            if (updatePass)
+                parameters.Add("@pass", user.UserPass);
+            parameters.Add("@id", user.UserID);
 
             return DbHelper_Access.ExecuteNonQuery(sql, parameters);
         }
@@ -70,7 +78,7 @@ namespace MyDbWebService.App_Code {
         public MyUser GetById(int id)
         {
             string sql = @"
-            SELECT u.*, r.roleId, r.roleName
+            SELECT u.*, r.roleName
             FROM tblUser u
             INNER JOIN tblRole r ON u.roleId = r.roleId
             WHERE u.userId = @id";
@@ -91,7 +99,7 @@ namespace MyDbWebService.App_Code {
         public List<MyUser> GetList()
         {
             string sql = @"
-            SELECT u.*, r.roleId, r.roleName
+            SELECT u.*, r.roleName
             FROM tblUser u
             INNER JOIN tblRole r ON u.roleId = r.roleId";
 
@@ -110,7 +118,7 @@ namespace MyDbWebService.App_Code {
         public MyUser UserByEmailPass(string userEmail, string userpass)
         {
             string sql = @"
-            SELECT u.*, r.roleId, r.roleName
+            SELECT u.*, r.roleName
             FROM tblUser u
             INNER JOIN tblRole r ON u.roleId = r.roleId
             WHERE u.userEmail = @userEmail and u.userPass=@userPass";
@@ -129,9 +137,35 @@ namespace MyDbWebService.App_Code {
             return MapRowToUser(dt.Rows[0]);
         }
 
+        public List<MyUser> GetByRoleId(int roleId)
+        {
+            string sql = @"
+            SELECT u.*, r.roleName
+            FROM tblUser u
+            INNER JOIN tblRole r ON u.roleId = r.roleId
+            WHERE u.roleId = @roleId";
+
+            var parameters = new Dictionary<string, object>
+        {
+            {"@roleId", roleId}
+        };
+
+            DataTable dt = DbHelper_Access.ExecuteQuery(sql, parameters);
+
+            List<MyUser> list = new List<MyUser>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                list.Add(MapRowToUser(row));
+            }
+
+            return list;
+        }
+
         // =========================
         // private helper
         // =========================
+        // הסיסמה לא נקראת כאן בכוונה - כדי שלא תישלח ללקוחות
         private MyUser MapRowToUser(DataRow row)
         {
             return new MyUser
@@ -140,7 +174,7 @@ namespace MyDbWebService.App_Code {
                 FirstName = row["firstName"].ToString(),
                 LastName = row["lastName"].ToString(),
                 UserEmail = row["userEmail"].ToString(),
-                DOB = Convert.ToDateTime(row["dob"]),
+                DOB = row["dob"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(row["dob"]),
                 IsActive = Convert.ToBoolean(row["isActive"]),
                 UserRole = new Role
                 {

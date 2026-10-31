@@ -39,7 +39,11 @@ public static class DbHelper_Access
             {
                 foreach (var kv in parameters)
                 {
-                    cmd.Parameters.AddWithValue(kv.Key, kv.Value ?? DBNull.Value);
+                    // תאריך נשלח כ-Date, אחרת Access נכשל על מילישניות (Data type mismatch)
+                    if (kv.Value is DateTime)
+                        cmd.Parameters.Add(kv.Key, OleDbType.Date).Value = kv.Value;
+                    else
+                        cmd.Parameters.AddWithValue(kv.Key, kv.Value ?? DBNull.Value);
                 }
             }
 
@@ -61,7 +65,11 @@ public static class DbHelper_Access
             {
                 foreach (var kv in parameters)
                 {
-                    cmd.Parameters.AddWithValue(kv.Key, kv.Value ?? DBNull.Value);
+                    // תאריך נשלח כ-Date, אחרת Access נכשל על מילישניות (Data type mismatch)
+                    if (kv.Value is DateTime)
+                        cmd.Parameters.Add(kv.Key, OleDbType.Date).Value = kv.Value;
+                    else
+                        cmd.Parameters.AddWithValue(kv.Key, kv.Value ?? DBNull.Value);
                 }
             }
 

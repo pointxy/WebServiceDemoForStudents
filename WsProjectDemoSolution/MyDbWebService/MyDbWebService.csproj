@@ -75,6 +75,9 @@
     <Content Include="WebService1.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\BLL\ArticleBLL.cs" />
+    <Compile Include="App_Code\BLL\RoleBLL.cs" />
+    <Compile Include="App_Code\BLL\UserBLL.cs" />
     <Compile Include="App_Code\DbHelper\DbHelper_Access.cs" />
     <Compile Include="App_Code\DbHelper\DbHelper_MsSql.cs" />
     <Compile Include="App_Code\DbHelper\DbHelper_MySql.cs" />

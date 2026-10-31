@@ -1,0 +1,7 @@
+# Visual Studio / build output (files already tracked are not affected)
+.vs/
+[Bb]in/
+[Oo]bj/
+*.suo
+# Access lock file
+*.laccdb

@@ -66,7 +66,7 @@ namespace MyDbWebService.App_Code {
         {
             string sql = @"
             SELECT a.*, 
-                   u.userId, u.firstName, u.lastName, u.userEmail, u.dob, u.isActive,
+                   u.firstName, u.lastName, u.userEmail, u.dob, u.isActive,
                    r.roleId, r.roleName
             FROM (tblArticle a
             INNER JOIN tblUser u ON a.userId = u.userId)
@@ -90,13 +90,41 @@ namespace MyDbWebService.App_Code {
         {
             string sql = @"
             SELECT a.*, 
-                   u.userId, u.firstName, u.lastName, u.userEmail, u.dob, u.isActive,
+                   u.firstName, u.lastName, u.userEmail, u.dob, u.isActive,
                    r.roleId, r.roleName
             FROM (tblArticle a
             INNER JOIN tblUser u ON a.userId = u.userId)
             INNER JOIN tblRole r ON u.roleId = r.roleId";
 
             DataTable dt = DbHelper_Access.ExecuteQuery(sql);
+
+            List<Article> list = new List<Article>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                list.Add(MapRowToArticle(row));
+            }
+
+            return list;
+        }
+
+        public List<Article> GetByUserId(int userId)
+        {
+            string sql = @"
+            SELECT a.*,
+                   u.firstName, u.lastName, u.userEmail, u.dob, u.isActive,
+                   r.roleId, r.roleName
+            FROM (tblArticle a
+            INNER JOIN tblUser u ON a.userId = u.userId)
+            INNER JOIN tblRole r ON u.roleId = r.roleId
+            WHERE a.userId = @userId";
+
+            var parameters = new Dictionary<string, object>
+        {
+            { "@userId", userId }
+        };
+
+            DataTable dt = DbHelper_Access.ExecuteQuery(sql, parameters);
 
             List<Article> list = new List<Article>();
 
@@ -126,7 +154,7 @@ namespace MyDbWebService.App_Code {
                     FirstName = row["firstName"].ToString(),
                     LastName = row["lastName"].ToString(),
                     UserEmail = row["userEmail"].ToString(),
-                    DOB = Convert.ToDateTime(row["dob"]),
+                    DOB = row["dob"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(row["dob"]),
                     IsActive = Convert.ToBoolean(row["isActive"]),
                     UserRole = new Role
                     {
