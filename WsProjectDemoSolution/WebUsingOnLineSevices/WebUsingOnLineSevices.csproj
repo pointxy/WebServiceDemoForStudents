@@ -72,6 +72,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="MyDbService\ArticlesPage.aspx" />
+    <Content Include="MyDbService\RolesPage.aspx" />
+    <Content Include="MyDbService\UsersPage.aspx" />
     <Content Include="ApiCall\OpenLibraryDemoPage.aspx" />
     <Content Include="CalculatorServicePage.aspx" />
     <Content Include="CountryInfoServicePage.aspx" />
@@ -79,6 +83,39 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDbService\ArticlesPage.aspx.cs">
+      <DependentUpon>ArticlesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDbService\ArticlesPage.aspx.designer.cs">
+      <DependentUpon>ArticlesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDbService\RolesPage.aspx.cs">
+      <DependentUpon>RolesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDbService\RolesPage.aspx.designer.cs">
+      <DependentUpon>RolesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDbService\UsersPage.aspx.cs">
+      <DependentUpon>UsersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDbService\UsersPage.aspx.designer.cs">
+      <DependentUpon>UsersPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MyDbServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="ApiCall\OpenLibraryDemoPage.aspx.cs">
       <DependentUpon>OpenLibraryDemoPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,6 +195,11 @@
     <Content Include="Web References\CountryInfoService\tLanguage.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </Content>
+    <None Include="Web References\MyDbServiceRef\WebService1.wsdl" />
+    <Content Include="Web References\MyDbServiceRef\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -172,6 +214,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:53048/WebService1.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MyDbServiceRef\</RelPath>
+      <UpdateFromURL>http://localhost:53048/WebService1.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebUsingOnLineSevices_MyDbServiceRef_WebService1</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso%3fWSDL">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\CountryInfoService\</RelPath>

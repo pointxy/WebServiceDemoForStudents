@@ -42,5 +42,15 @@ namespace WebUsingOnLineSevices.Properties {
                 return ((string)(this["WebUsingOnLineSevices_CalculatorService_Calculator"]));
             }
         }
+
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:53048/WebService1.asmx")]
+        public string WebUsingOnLineSevices_MyDbServiceRef_WebService1 {
+            get {
+                return ((string)(this["WebUsingOnLineSevices_MyDbServiceRef_WebService1"]));
+            }
+        }
     }
 }
